@@ -1,0 +1,11 @@
+public class IfElseExamples {
+    public static void main(String[] args) {
+        int not = 70;
+
+        if (not >= 50) {
+            System.out.println("Gecti");
+        } else {
+            System.out.println("Kaldi");
+        }
+    }
+}
