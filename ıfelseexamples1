@@ -1,0 +1,65 @@
+
+package ıfelseexamples1;
+import java.util.Scanner;
+
+public class IfElseExamples1 {
+
+    public static void main(String[] args) {
+     Scanner klavye = new Scanner(System.in);
+        System.out.println("Vize notunuzu giriniz:");
+        int vize = klavye.nextInt();
+        if (vize <0 ||vize >100){
+    System.out.println("Vize notunuzu yanlis girdiniz.");
+    }
+        else {
+     System.out.println("Final notunuzu giriniz:");
+        int Final = klavye.nextInt();
+    
+        if (Final <0 ||Final >100){
+    System.out.println("final notunuzu yanlis girdiniz.");
+    }
+        else{
+        double ort = vize*0.4 +Final*0.6;
+        System.out.println("Ortalama: " + ort);
+        if (Final>=50){
+            if (ort>=60){
+    System.out.println("Gecti");
+            }
+            else {
+            System.out.println("Kaldi.");
+            }
+       
+                    
+                    
+                    
+                    }
+        else {
+        System.out.println("Butunlemeye girebilir.");
+        
+        
+        }
+        }
+    }
+        
+       
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        }
+    }
+    
+
