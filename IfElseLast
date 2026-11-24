@@ -1,0 +1,42 @@
+
+package ıfelselast;
+import  java.util.Scanner;
+public class IfElseLast {
+
+ 
+    public static void main(String[] args) {
+  
+       Scanner klavye = new Scanner(System.in); 
+    System.out.println("Paket agirligini giriniz: (KG)");
+        double A = klavye.nextDouble();
+    System.out.println("Bos buyuk bolme sayisini giriniz: ");  
+    int B = klavye.nextInt();
+     System.out.println("Bos kucuk bolme sayisini giriniz: ");  
+    int K = klavye.nextInt();        
+        if (A>10){
+         System.out.println("Paket agirlik sinirini asiyor.");  
+        
+        
+        }
+    else{
+     if ((A<=10&&A>2)&&(B>=1))   {
+      System.out.println("Paket buyuk bolmeye yerlestirildi.");
+     B = --B;
+     }
+     else if ((A<=2)&&(K>=1)) {
+     System.out.println("Paket kucuk bolmeye yerlestirildi.");
+     K = --K;
+     }
+     else if ((A<=2)&&((B>=1)&& K<1)) {
+     System.out.println("Paket buyuk bolmeye yerlestirildi.");
+     B = --B;
+     
+     }
+     else {
+       System.out.println("Paket icin uygun bos bolme yok");       
+             }}
+         System.out.println("Kalan bos buyuk bolme: "+ B);   
+        System.out.println("Kalan bos kucuk bolme: "+ K);   
+       }
+    
+}
