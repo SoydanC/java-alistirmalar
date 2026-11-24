@@ -1,0 +1,47 @@
+package ıfelseexamples2;
+import java.util.Scanner;
+
+public class IfElseExamples2 {
+
+    public static void main(String[] args) {
+     Scanner klavye = new Scanner(System.in);
+     System.out.println("Sepet tutarini giriniz (TL): ");
+       double sepet = klavye.nextDouble();
+      System.out.println("Uyelik durumunu giriniz (1: Uye, 0: Uye degil):");
+        int uye = klavye.nextInt();
+          double kargo = 0;
+        double indirim = 0;
+    if (uye == 1) {
+     if (sepet >=500){
+     indirim = sepet*0.15 ;
+   }
+     else {
+        indirim = sepet*0.05 ;
+     }
+    }
+     else {
+    if (sepet >=750){
+      indirim = sepet*0.1 ;
+    }}
+    double indirimlisepet = (double)(sepet -indirim);
+    
+    if (indirimlisepet >= 450){
+      kargo = 0.00; 
+    }
+      else {
+       kargo = 40.00; 
+    }
+    double toplam = kargo+indirimlisepet;
+    System.out.printf("indirim tutari: %.2f\n", indirim);
+
+    System.out.printf("indirimli sepet tutari: %.2f\n", indirimlisepet);
+System.out.printf("kargo ucreti: %.2f\n", kargo);
+System.out.printf("Odenecek toplam: %.2f\n", toplam);
+ } }
+
+
+
+
+
+
+
